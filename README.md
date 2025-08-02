@@ -1,6 +1,6 @@
-# SmartTouch 
+# SmartMotion
 
-SmartTouch is an innovative gesture recognition system designed to allow interaction with a computer using hand gestures. With this project, you can control your system through hand movements, simulating actions like mouse movement and clicks with simple gestures.
+SmartMotion is an innovative gesture recognition system designed to allow interaction with a computer using hand gestures. With this project, you can control your system through hand movements, simulating actions like mouse movement and clicks with simple gestures.
 
 ---
 
@@ -14,18 +14,18 @@ SmartTouch is an innovative gesture recognition system designed to allow interac
 
 ## 📦 Installation
 
-To get started with **SmartTouch**, follow the steps below:
+To get started with **SmartMotion**, follow the steps below:
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/gnatykdm/smarttouch.git
+git clone https://github.com/gnatykdm/smartmotion.git
 ```
 
 ### 2. Install Dependencies
 
 ```bash
-cd smarttouch
+cd smartmotion
 python -m venv venv
 source venv/bin/activate  # For Windows use: venv\Scripts\activate
 pip install -r requirements.txt
