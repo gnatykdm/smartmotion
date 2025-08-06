@@ -3,13 +3,18 @@ import math
 import mediapipe as mp
 
 class HandTrackingDynamic:
-    def __init__(self, mode=False, maxHands=2, detectionCon=0.5, trackCon=0.5):
+    def __init__(self, mode=False, maxHands=1, detectionCon=0.5, trackCon=0.5):
         self.__mode__ = mode
         self.__maxHands__ = maxHands
         self.__detectionCon__ = detectionCon
         self.__trackCon__ = trackCon
         self.handsMp = mp.solutions.hands
-        self.hands = self.handsMp.Hands()
+        self.hands = self.handsMp.Hands(
+            static_image_mode=self.__mode__,
+            max_num_hands=self.__maxHands__,
+            min_detection_confidence=self.__detectionCon__,
+            min_tracking_confidence=self.__trackCon__
+        )
         self.mpDraw = mp.solutions.drawing_utils
         self.tipIds = [4, 8, 12, 16, 20]
 
